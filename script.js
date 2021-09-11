@@ -42,7 +42,7 @@ const viewPokemon = async (id)  => {
 const displayPopup = (pokeman) => {
     const type = pokeman.types.map((type) => type.type.name).join(', ');
     //const image = pokeman.sprites['front_default'];
-    const image = `https://pokeres.bastionbot.org/images/pokemon/${pokeman.id}.png`
+    const image = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokeman.id}.png`
     const htmlString = `
         <div class="popup">
             <button id="closeBtn" onclick="closePopup()">Close</button>
