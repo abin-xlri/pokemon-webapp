@@ -9,7 +9,9 @@ const fetchPokemon = async () => {
     ...results,
     name: results.name,
     id: index +1,
-    image: `https://pokeres.bastionbot.org/images/pokemon/${index +1}.png`
+    //image: `https://pokeres.bastionbot.org/images/pokemon/${index +1}.png`
+    //https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png
+    image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${index +1}.png`
    }));
    displayPokemon(pokemon);
 };
